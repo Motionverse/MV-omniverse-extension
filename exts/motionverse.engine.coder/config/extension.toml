@@ -1,0 +1,32 @@
+[package]
+version = "1.0.0"
+
+authors = ["Guowei Zhou <zhouguowei@deepscience.cn>"]
+
+title = "Motionverse"
+description = "#"
+
+readme  = "docs/README.md"
+
+# URL of the extension source repository.
+repository = "https://github.com/Motionverse/MV-omniverse-extension.git"
+
+# One of categories for UI.
+category = "Animation"
+
+# Keywords for the extension
+keywords = ["Ai", "Text","Audio","Animation"]
+
+# Icon to show in the extension manager
+icon = "data/logo.png"
+
+# Preview to show in the extension manager
+preview_image = "data/preview.png"
+
+# Use omni.ui to build simple UI
+[dependencies]
+"omni.kit.uiapp" = {}
+
+# Main python module this extension provides, it will be publicly available as "import motionverse.engine.coder".
+[[python.module]]
+name = "motionverse.engine.coder"
